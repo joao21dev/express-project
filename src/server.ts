@@ -27,7 +27,7 @@ app.post("/", (request, response) => {
   response.send(JSON.parse(request.body));
 });
 
-app.get("/hostInfo", (request, response) => {
+app.get("/", (request, response) => {
   response.send({
     hostname: request.hostname,
     path: request.path,
